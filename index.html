@@ -1,1 +1,426 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Operators Academy — The real world, over a weekend</title>
+<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<meta name="description" content="A year-long, in-person operator program. Work the hardest real-world problems companies face in immersive team weekends.">
+<meta property="og:title" content="Operators Academy — The real world, over a weekend">
+<meta property="og:description" content="Immersive weekends across a year. Operating experience you can prove, and a cohort who survived the gauntlet with you.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:#F2EEE4;color:#17160F;font-family:'IBM Plex Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#B23C0C}a:hover{color:#8A2E08}
+details summary{cursor:pointer;list-style:none}
+details summary::-webkit-details-marker{display:none}
+
+.prototype-form .hsfc-FieldLabel,
+.prototype-form .hsfc-FieldLabel * {
+  color: #fff !important;
+}
+
+</style>
+
+<style>
+:root{--accent:#C2410C}
+html{scroll-behavior:smooth}
+*{box-sizing:border-box}
+.oa-tab{background:transparent;color:#17160F;font-weight:500}
+.oa-tab .oa-arrow{visibility:hidden;color:var(--accent)}
+.oa-tab[aria-selected="true"]{background:#17160F;color:#F2EEE4;font-weight:600}
+.oa-tab[aria-selected="true"] .oa-arrow{visibility:visible}
+.oa-tab:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+[hidden]{display:none!important}
+@media (max-width:980px){
+  header nav a:not(:last-child){display:none}
+  [style*="padding: 20px 64px"],[style*="padding: 96px 64px"],[style*="padding: 104px 64px"],[style*="padding: 112px 64px"],[style*="padding: 88px 64px"],[style*="padding: 48px 64px"]{padding-left:20px!important;padding-right:20px!important;padding-top:64px!important;padding-bottom:64px!important}
+  header [style*="padding: 20px 64px"]{padding-top:14px!important;padding-bottom:14px!important}
+  [style*="grid-template-columns"]{grid-template-columns:1fr!important;row-gap:32px}
+  [style*="grid-column"]{grid-column:auto!important}
+  [style*="justify-content: space-between; align-items: end"],footer>div{flex-direction:column;align-items:flex-start!important}
+  [style*="border-right: 1px solid"],[style*="border-left: 1px solid"]{border-left:0!important;border-right:0!important;padding-left:0!important;padding-right:0!important}
+  [style*="padding: 32px 0 0 32px"],[style*="padding: 28px 0 0 28px"],[style*="padding: 24px 0 0 24px"]{padding-left:0!important}
+  h1{font-size:64px!important}
+  h2{font-size:44px!important}
+  #apply h2{font-size:60px!important}
+  [style*="font-size: 96px"]{font-size:64px!important}
+  .oa-panels{padding:28px!important;min-height:0!important}
+  [style*="box-shadow: 12px"]{box-shadow:6px 6px 0 var(--accent)!important}
+  [style*="display: flex; gap: 16px; align-items: center"]{flex-direction:column;align-items:stretch!important}
+  [style*="padding: 20px 0; border-bottom"]{flex-direction:column;align-items:flex-start!important;gap:6px}
+  [style*="font-size: 32px; text-transform: uppercase"]{font-size:26px!important}
+}
+</style>
+</head>
+<body>
+<div style="width: 100%; background: #F2EEE4; color: #17160F; font-family: 'IBM Plex Sans', system-ui, sans-serif">
+
+<!-- NAV -->
+<header style="border-bottom: 1px solid #17160F; background: #F2EEE4">
+<div style="max-width: 1280px; margin: 0 auto; padding: 20px 64px; display: flex; align-items: center; justify-content: space-between; gap: 32px">
+<a href="#top" style="display: flex; align-items: center; gap: 12px; text-decoration: none; color: #17160F">
+<svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true"><rect x="1.5" y="1.5" width="27" height="27" stroke="#17160F" stroke-width="3"></rect><path d="M8 15h14M15 8v14" stroke="var(--accent)" stroke-width="3"></path></svg>
+<span style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 26px; letter-spacing: 0.04em; text-transform: uppercase">Operators Academy</span>
+</a>
+<nav aria-label="Main" style="display: flex; align-items: center; gap: 32px; font-size: 15px; font-weight: 500">
+<a href="#program" style="color: #17160F; text-decoration: none">Program</a>
+<a href="#scenarios" style="color: #17160F; text-decoration: none">Scenarios</a>
+<a href="#faq" style="color: #17160F; text-decoration: none">FAQ</a>
+<a href="#apply" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 20px; background: #17160F; color: #F2EEE4; text-decoration: none; font-weight: 600">Apply for Cohort 01</a>
+</nav>
+</div>
+</header>
+
+<!-- HERO -->
+<section id="top" style="border-bottom: 1px solid #17160F">
+<div style="max-width: 1280px; margin: 0 auto; padding: 96px 64px 104px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 32px; align-items: end">
+<div style="grid-column: span 7; display: flex; flex-direction: column; gap: 32px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #5A5648">A year-long program · In person · Founding cohort 2027</div>
+<h1 style="margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 128px; line-height: 0.88; letter-spacing: -0.01em; text-transform: uppercase">The real world,<br><span style="color: var(--accent)">over a weekend.</span></h1>
+<p style="margin: 0; max-width: 620px; font-size: 21px; line-height: 1.5; color: #2E2C24">Work the hardest problems companies face — a supply shock, a regulator’s ruling, leadership changing the spec overnight — as a team, under pressure, in immersive weekends across a year. Leave with operating experience you can prove, and a cohort who survived the gauntlet with you.</p>
+<div style="display: flex; gap: 16px; align-items: center">
+<a href="#apply" style="display: inline-flex; align-items: center; min-height: 56px; padding: 0 28px; background: var(--accent); color: #FFFFFF; text-decoration: none; font-weight: 600; font-size: 17px">Apply for the founding cohort</a>
+</div>
+</div>
+<div style="grid-column: span 5; background: #17160F; color: #F2EEE4; font-family: 'IBM Plex Mono', monospace; padding: 28px 28px 32px; display: flex; flex-direction: column; gap: 20px; box-shadow: 12px 12px 0 var(--accent)">
+<div style="display: flex; justify-content: space-between; font-size: 13px; letter-spacing: 0.1em; text-transform: uppercase; color: #B9B3A2">
+<span>Briefing 03</span><span>Sat · 06:40</span>
+</div>
+<div style="display: inline-flex; align-self: flex-start; padding: 6px 10px; background: var(--accent); color: #FFFFFF; font-size: 13px; font-weight: 600; letter-spacing: 0.1em">PRIORITY: LINE-STOP</div>
+<p style="margin: 0; font-size: 19px; line-height: 1.5; color: #F2EEE4">The controller chip on your main board has gone end-of-life. Your supplier allocation is gone. Production halts in 21 days.</p>
+<div style="border-top: 1px dashed #5A5648; padding-top: 18px; display: flex; flex-direction: column; gap: 8px; font-size: 14px; line-height: 1.5; color: #D6D0BF">
+<span style="color: #B9B3A2; letter-spacing: 0.08em">YOUR TEAM HAS</span><span>— 48 hours (accelerated in simulation)</span><span>— a supplier list that’s out of date</span><span>— a CFO who wants options by Sunday</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- GAP -->
+<section id="program" style="border-bottom: 1px solid #17160F; background: #E8E2D3">
+<div style="max-width: 1280px; margin: 0 auto; padding: 104px 64px; display: flex; flex-direction: column; gap: 56px">
+<div style="display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 32px; align-items: end">
+<div style="grid-column: span 7; display: flex; flex-direction: column; gap: 20px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #B23C0C">The experience gap</div>
+<h2 style="margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 72px; line-height: 0.95; text-transform: uppercase">“Entry-level” now asks for three years of experience.</h2>
+</div>
+<p style="grid-column: 9 / span 4; margin: 0; font-size: 19px; line-height: 1.55; color: #2E2C24">Companies can’t find people who have operated through a real disruption. Graduates can’t get the job that would give them that experience. We close the gap by giving you the reps, deliberately, with the people who’ve done it.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; border-top: 2px solid #17160F">
+<div style="padding: 32px 32px 0 0; display: flex; flex-direction: column; gap: 12px; border-right: 1px solid #A39D8B">
+<div style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 96px; line-height: 1">5.7%</div>
+<div style="font-size: 17px; line-height: 1.5; color: #2E2C24">US unemployment for recent college graduates aged 22–27, well above the overall rate.</div>
+</div>
+<div style="padding: 32px 32px 0; display: flex; flex-direction: column; gap: 12px; border-right: 1px solid #A39D8B">
+<div style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 96px; line-height: 1">−35%</div>
+<div style="font-size: 17px; line-height: 1.5; color: #2E2C24">US entry-level job postings since early 2023, as routine starter work disappears.</div>
+</div>
+<div style="padding: 32px 0 0 32px; display: flex; flex-direction: column; gap: 12px">
+<div style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 96px; line-height: 1; color: #B23C0C">2×</div>
+<div style="font-size: 17px; line-height: 1.5; color: #2E2C24">The hire rate for graduates who bring real work experience, compared with those who don’t.</div>
+</div>
+</div>
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5A5648">Sources: Federal Reserve Bank of New York data via Kelly Services (Apr 2026); Metaintro (Apr 2026); MyCVCreator (Jul 2026).</div>
+</div>
+</section>
+
+<!-- SCENARIOS -->
+<section id="scenarios" style="border-bottom: 1px solid #17160F">
+<div style="max-width: 1280px; margin: 0 auto; padding: 104px 64px; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; justify-content: space-between; align-items: end; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 20px; max-width: 760px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #B23C0C">What you’ll face</div>
+<h2 style="margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 72px; line-height: 0.95; text-transform: uppercase">Problems that don’t come with a syllabus.</h2>
+</div>
+<p style="margin: 0; max-width: 380px; font-size: 17px; line-height: 1.55; color: #2E2C24">Every weekend is a live, immersive challenge inspired by real cases: experienced operators role-playing suppliers, regulators and executives; no simple answers; and a clock that doesn’t stop.</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px">
+<div style="border: 2px solid #17160F; background: #FBF9F3; padding: 32px; display: flex; flex-direction: column; gap: 20px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.1em; color: #5A5648">SCENARIO TYPE 01</div>
+<h3 style="margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 40px; line-height: 1; text-transform: uppercase">Supply shock</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.55; color: #2E2C24">A critical chip on your main board goes unobtainable. Redesign the board, requalify a part, or renegotiate allocation — while the line keeps running.</p>
+<div style="margin-top: auto; padding-top: 16px; border-top: 1px solid #A39D8B; font-size: 14px; color: #5A5648">Sourcing · hardware trade-offs · cash and schedule</div>
+</div>
+<div style="border: 2px solid #17160F; background: #FBF9F3; padding: 32px; display: flex; flex-direction: column; gap: 20px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.1em; color: #5A5648">SCENARIO TYPE 02</div>
+<h3 style="margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 40px; line-height: 1; text-transform: uppercase">Regulatory hit</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.55; color: #2E2C24">A government customer designates your company a supply-chain risk. Protect revenue, respond to the regulator and keep your team and partners on side.</p>
+<div style="margin-top: auto; padding-top: 16px; border-top: 1px solid #A39D8B; font-size: 14px; color: #5A5648">Policy · stakeholders · communication under scrutiny</div>
+</div>
+<div style="border: 2px solid #17160F; background: #FBF9F3; padding: 32px; display: flex; flex-direction: column; gap: 20px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.1em; color: #5A5648">SCENARIO TYPE 03</div>
+<h3 style="margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 40px; line-height: 1; text-transform: uppercase">The spec changes</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.55; color: #2E2C24">Leadership decides the capsule must now be recoverable and reusable. Rework the requirements, re-plan the program and decide what gets cut.</p>
+<div style="margin-top: auto; padding-top: 16px; border-top: 1px solid #A39D8B; font-size: 14px; color: #5A5648">Requirements · re-planning · leading through change</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- THE YEAR -->
+<section style="border-bottom: 1px solid #17160F; background: #E8E2D3">
+<div style="max-width: 1280px; margin: 0 auto; padding: 104px 64px; display: flex; flex-direction: column; gap: 56px">
+<div style="display: flex; flex-direction: column; gap: 20px; max-width: 820px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #B23C0C">How the year runs</div>
+<h2 style="margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 72px; line-height: 0.95; text-transform: uppercase">Four weekends. One team. A year of reps.</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; border-top: 2px solid #17160F">
+<div style="padding: 28px 28px 0 0; display: flex; flex-direction: column; gap: 12px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #5A5648">WEEKEND 01 · [MONTH]</div>
+<div style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 32px; text-transform: uppercase">Muster</div>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #2E2C24">Form your team, learn the operator’s toolkit and take your first live incident by Saturday night.</p>
+</div>
+<div style="padding: 28px 28px 0; display: flex; flex-direction: column; gap: 12px; border-left: 1px solid #A39D8B">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #5A5648">WEEKEND 02 · [MONTH]</div>
+<div style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 32px; text-transform: uppercase">Supply shock</div>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #2E2C24">Suppliers, factories and finance collide. Find the real problem before you solve the wrong one.</p>
+</div>
+<div style="padding: 28px 28px 0; display: flex; flex-direction: column; gap: 12px; border-left: 1px solid #A39D8B">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #5A5648">WEEKEND 03 · [MONTH]</div>
+<div style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 32px; text-transform: uppercase">The ruling</div>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #2E2C24">A regulator moves against you. Assess the exposure, brief the board and hold the room.</p>
+</div>
+<div style="padding: 28px 0 0 28px; display: flex; flex-direction: column; gap: 12px; border-left: 1px solid #A39D8B">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B23C0C">WEEKEND 04 · [MONTH]</div>
+<div style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 32px; text-transform: uppercase; color: #B23C0C">The Gauntlet</div>
+<p style="margin: 0; font-size: 16px; line-height: 1.55; color: #2E2C24">Leadership changes the spec, and everything you’ve learned arrives at once. Survive it together, then graduate.</p>
+</div>
+</div>
+<div style="display: flex; gap: 24px; align-items: center; padding: 24px 28px; background: #17160F; color: #F2EEE4">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.1em; color: var(--accent); white-space: nowrap">BETWEEN WEEKENDS</div>
+<div style="font-size: 17px; line-height: 1.5">Team sprints, coach office hours and written debriefs that build your assessed operator portfolio, one decision at a time.</div>
+</div>
+</div>
+</section>
+
+<!-- PROMISE / AUDIENCE -->
+<section style="border-bottom: 1px solid #17160F">
+<div style="max-width: 1280px; margin: 0 auto; padding: 104px 64px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 32px">
+<div style="grid-column: span 5; display: flex; flex-direction: column; gap: 28px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #B23C0C">What you leave with</div>
+<h2 style="margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 64px; line-height: 0.95; text-transform: uppercase">Proof, not a certificate.</h2>
+<div role="tablist" aria-label="Who is it for" style="display: flex; flex-direction: column; gap: 10px">
+<button type="button" role="tab" id="tab-ind" aria-controls="panel-ind" aria-selected="true" data-tab="ind" class="oa-tab" style="min-height: 56px; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; border: 2px solid #17160F; font-family: 'IBM Plex Sans', sans-serif; font-size: 18px; text-align: left; cursor: pointer"><span>Individuals</span><span class="oa-arrow" aria-hidden="true">→</span></button>
+<button type="button" role="tab" id="tab-team" aria-controls="panel-team" aria-selected="false" data-tab="team" class="oa-tab" style="min-height: 56px; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; border: 2px solid #17160F; font-family: 'IBM Plex Sans', sans-serif; font-size: 18px; text-align: left; cursor: pointer"><span>Teams</span><span class="oa-arrow" aria-hidden="true">→</span></button>
+<button type="button" role="tab" id="tab-spon" aria-controls="panel-spon" aria-selected="false" data-tab="spon" class="oa-tab" style="min-height: 56px; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; border: 2px solid #17160F; font-family: 'IBM Plex Sans', sans-serif; font-size: 18px; text-align: left; cursor: pointer"><span>Corporate sponsors</span><span class="oa-arrow" aria-hidden="true">→</span></button>
+</div>
+</div>
+<div class="oa-panels" style="grid-column: 7 / span 6; border: 2px solid #17160F; background: #FBF9F3; padding: 48px; display: flex; flex-direction: column; gap: 28px; min-height: 460px; box-sizing: border-box">
+<div role="tabpanel" id="panel-ind" aria-labelledby="tab-ind" data-panel="ind" style="display: flex; flex-direction: column; gap: 28px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.1em; color: #5A5648">FOR STUDENTS, GRADUATES &amp; EARLY-CAREER</div>
+<h3 style="margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 48px; line-height: 1; text-transform: uppercase">A year of operating experience you can prove.</h3>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 16px; font-size: 18px; line-height: 1.5">
+<li style="display: flex; gap: 14px"><span style="color: #B23C0C; font-weight: 600">01</span><span>Four in-person weekends working real-world crises as a team</span></li>
+<li style="display: flex; gap: 14px"><span style="color: #B23C0C; font-weight: 600">02</span><span>An assessed operator portfolio: every decision, trade-off and debrief documented</span></li>
+<li style="display: flex; gap: 14px"><span style="color: #B23C0C; font-weight: 600">03</span><span>Stories to tell in interviews that nobody else in the applicant pile has</span></li>
+<li style="display: flex; gap: 14px"><span style="color: #B23C0C; font-weight: 600">04</span><span>A cohort who survived the gauntlet with you</span></li>
+</ul>
+</div>
+<div role="tabpanel" id="panel-team" aria-labelledby="tab-team" data-panel="team" hidden style="display: flex; flex-direction: column; gap: 28px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.1em; color: #5A5648">FOR TEAMS OF 3–6</div>
+<h3 style="margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 48px; line-height: 1; text-transform: uppercase">Rehearse the crisis before it’s real.</h3>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 16px; font-size: 18px; line-height: 1.5">
+<li style="display: flex; gap: 14px"><span style="color: #B23C0C; font-weight: 600">01</span><span>Enroll together and stay together through every weekend</span></li>
+<li style="display: flex; gap: 14px"><span style="color: #B23C0C; font-weight: 600">02</span><span>Work supply, regulatory and spec-change shocks under real pressure</span></li>
+<li style="display: flex; gap: 14px"><span style="color: #B23C0C; font-weight: 600">03</span><span>Bring back shared language and trust your team can use on Monday</span></li>
+<li style="display: flex; gap: 14px"><span style="color: #B23C0C; font-weight: 600">04</span><span>15% off every seat</span></li>
+</ul>
+</div>
+<div role="tabpanel" id="panel-spon" aria-labelledby="tab-spon" data-panel="spon" hidden style="display: flex; flex-direction: column; gap: 28px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; letter-spacing: 0.1em; color: #5A5648">FOR CORPORATE SPONSORS</div>
+<h3 style="margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 48px; line-height: 1; text-transform: uppercase">Juniors who operate like three-year hires, in one year.</h3>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 16px; font-size: 18px; line-height: 1.5">
+<li style="display: flex; gap: 14px"><span style="color: #B23C0C; font-weight: 600">01</span><span>Author a scenario drawn from your own operating reality</span></li>
+<li style="display: flex; gap: 14px"><span style="color: #B23C0C; font-weight: 600">02</span><span>Judge the Gauntlet and meet the teams in action</span></li>
+<li style="display: flex; gap: 14px"><span style="color: #B23C0C; font-weight: 600">03</span><span>First access to recruit graduates</span></li>
+<li style="display: flex; gap: 14px"><span style="color: #B23C0C; font-weight: 600">04</span><span>Sponsored seats for your early-career staff</span></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- LOCATIONS -->
+<section style="border-bottom: 1px solid #17160F; background: #E8E2D3">
+<div style="max-width: 1280px; margin: 0 auto; padding: 88px 64px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 32px; align-items: start">
+<div style="grid-column: span 4; display: flex; flex-direction: column; gap: 20px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #B23C0C">Where</div>
+<h2 style="margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 56px; line-height: 0.95; text-transform: uppercase">Cohorts in the US and Europe.</h2>
+</div>
+<div style="grid-column: 6 / span 7; display: flex; flex-direction: column; border-top: 2px solid #17160F">
+<div style="display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 1px solid #A39D8B"><span style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 32px; text-transform: uppercase">San Francisco Bay Area</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B23C0C">COHORT 01 · January 2027</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 1px solid #A39D8B"><span style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 32px; text-transform: uppercase">Boston</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B23C0C">COHORT 02 · March 2027</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 1px solid #A39D8B"><span style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 32px; text-transform: uppercase">Zurich</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #B23C0C">COHORT 03 · June 2027</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 1px solid #A39D8B"><span style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 32px; text-transform: uppercase; color: #5A5648">London</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #5A5648">NEXT · JOIN THE WAITLIST</span></div>
+<div style="display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 1px solid #A39D8B"><span style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 32px; text-transform: uppercase; color: #5A5648">Singapore</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; color: #5A5648">SPONSOR-LED · ENQUIRE</span></div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="border-bottom: 1px solid #17160F">
+<div style="max-width: 1280px; margin: 0 auto; padding: 104px 64px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 32px">
+<div style="grid-column: span 4; display: flex; flex-direction: column; gap: 20px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase; color: #B23C0C">Questions</div>
+<h2 style="margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 64px; line-height: 0.95; text-transform: uppercase">Before you sign up.</h2>
+</div>
+<div style="grid-column: 6 / span 7; display: flex; flex-direction: column; border-top: 2px solid #17160F">
+<details style="border-bottom: 1px solid #A39D8B; padding: 24px 0">
+<summary style="font-size: 20px; font-weight: 600; display: flex; justify-content: space-between; gap: 24px; min-height: 28px">Who is this for?<span aria-hidden="true" style="color: #B23C0C">+</span></summary>
+<p style="margin: 16px 0 0; font-size: 17px; line-height: 1.6; color: #2E2C24">University students, recent graduates and early- to mid-career professionals who want to work on hard, real-world problems before the stakes are real. No particular degree is required. Curiosity and the willingness to work in a team under pressure are.</p>
+</details>
+<details style="border-bottom: 1px solid #A39D8B; padding: 24px 0">
+<summary style="font-size: 20px; font-weight: 600; display: flex; justify-content: space-between; gap: 24px; min-height: 28px">What does “immersive” actually mean?<span aria-hidden="true" style="color: #B23C0C">+</span></summary>
+<p style="margin: 16px 0 0; font-size: 17px; line-height: 1.6; color: #2E2C24">Each weekend is a live scenario. Coaches and guests play the suppliers, regulators, executives and customers you have to deal with. Information arrives late and incomplete, and the situation changes while you work, just as it does in a real company.</p>
+</details>
+<details style="border-bottom: 1px solid #A39D8B; padding: 24px 0">
+<summary style="font-size: 20px; font-weight: 600; display: flex; justify-content: space-between; gap: 24px; min-height: 28px">How much time does it take?<span aria-hidden="true" style="color: #B23C0C">+</span></summary>
+<p style="margin: 16px 0 0; font-size: 17px; line-height: 1.6; color: #2E2C24">Four in-person weekends across the year, plus light team sprints and debriefs in between: 40 hours per month. It’s designed to fit alongside study or a full-time job.</p>
+</details>
+<details style="border-bottom: 1px solid #A39D8B; padding: 24px 0">
+<summary style="font-size: 20px; font-weight: 600; display: flex; justify-content: space-between; gap: 24px; min-height: 28px">Are the scenarios about real companies?<span aria-hidden="true" style="color: #B23C0C">+</span></summary>
+<p style="margin: 16px 0 0; font-size: 17px; line-height: 1.6; color: #2E2C24">They’re inspired by real cases across hardware, deep tech, energy and regulated industries, rebuilt so you face the same kinds of decisions. Sponsor companies may also author scenarios drawn from their own operations.</p>
+</details>
+<details style="border-bottom: 1px solid #A39D8B; padding: 24px 0">
+<summary style="font-size: 20px; font-weight: 600; display: flex; justify-content: space-between; gap: 24px; min-height: 28px">Can my employer pay?<span aria-hidden="true" style="color: #B23C0C">+</span></summary>
+<p style="margin: 16px 0 0; font-size: 17px; line-height: 1.6; color: #2E2C24">Yes. We can invoice your employer for individual or team seats. Ask about sponsorship if your company wants to author a scenario or recruit from the cohort.</p>
+</details>
+</div>
+</div>
+</section>
+
+<!-- APPLY -->
+<section id="apply" style="background: var(--accent); color: #FFFFFF">
+<div style="max-width: 1280px; margin: 0 auto; padding: 112px 64px; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: 32px; align-items: end">
+<div style="grid-column: span 7; display: flex; flex-direction: column; gap: 24px">
+<div style="font-family: 'IBM Plex Mono', monospace; font-size: 14px; letter-spacing: 0.12em; text-transform: uppercase">Founding cohort · Limited seats</div>
+<h2 style="margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 112px; line-height: 0.88; text-transform: uppercase">Survive the gauntlet. Together.</h2>
+</div>
+<form
+  id="operators-academy-interest"
+  action="#top"
+  method="get"
+  style="grid-column: 9 / span 4; display: flex; flex-direction: column; gap: 16px"
+>
+  <label for="oa-email" style="font-size: 15px; font-weight: 600">
+    Email
+  </label>
+
+  <input
+    id="oa-email"
+    name="email"
+    type="email"
+    required
+    autocomplete="email"
+    placeholder="you@example.com"
+    style="
+      min-height: 52px;
+      padding: 0 16px;
+      border: 2px solid #17160F;
+      background: #FFFFFF;
+      color: #17160F;
+      font-size: 17px;
+      font-family: 'IBM Plex Sans', sans-serif;
+    "
+  >
+
+  <label for="oa-who" style="font-size: 15px; font-weight: 600">
+    I’m applying as
+  </label>
+
+  <select
+    id="oa-who"
+    name="applying_as"
+    style="
+      min-height: 52px;
+      padding: 0 12px;
+      border: 2px solid #17160F;
+      background: #FFFFFF;
+      color: #17160F;
+      font-size: 17px;
+      font-family: 'IBM Plex Sans', sans-serif;
+    "
+  >
+    <option>A student or recent graduate</option>
+    <option>An early- to mid-career professional</option>
+    <option>A team lead enrolling a team</option>
+    <option>A potential corporate sponsor</option>
+  </select>
+
+  <label for="oa-cohort" style="font-size: 15px; font-weight: 600">
+    I’m interested in
+  </label>
+
+  <select
+    id="oa-cohort"
+    name="cohort"
+    style="
+      min-height: 52px;
+      padding: 0 12px;
+      border: 2px solid #17160F;
+      background: #FFFFFF;
+      color: #17160F;
+      font-size: 17px;
+      font-family: 'IBM Plex Sans', sans-serif;
+    "
+  >
+    <option>Cohort 01 - Silicon Valley</option>
+    <option>Cohort 02 - Boston</option>
+    <option>Cohort 03 - Zurich</option>
+    <option>Cohort 04 - Singapore</option>
+  </select>
+
+  <input
+    type="submit"
+    value="Request an invitation"
+    style="
+      min-height: 56px;
+      background: #17160F;
+      color: #F2EEE4;
+      border: 0;
+      font-size: 17px;
+      font-weight: 600;
+      font-family: 'IBM Plex Sans', sans-serif;
+      cursor: pointer;
+    "
+  >
+</form>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background: #17160F; color: #B9B3A2">
+<div style="max-width: 1280px; margin: 0 auto; padding: 48px 64px; display: flex; justify-content: space-between; align-items: start; gap: 48px; font-size: 14px; line-height: 1.6">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<span style="font-family: 'Big Shoulders Display', sans-serif; font-weight: 800; font-size: 22px; letter-spacing: 0.04em; text-transform: uppercase; color: #F2EEE4">Operators Academy</span>
+<span>© 2026 Operators Academy.</span>
+</div>
+<p style="margin: 0; max-width: 560px">Operators Academy is an independent program. Scenarios are inspired by public cases and do not represent the views of any company named or described.</p>
+</div>
+</footer>
+
+</div>
+
+<script>
+document.querySelectorAll('.oa-tab').forEach(function(b){
+  b.addEventListener('click',function(){
+    var id=b.getAttribute('data-tab');
+    document.querySelectorAll('.oa-tab').forEach(function(t){t.setAttribute('aria-selected',t===b?'true':'false');});
+    document.querySelectorAll('[data-panel]').forEach(function(p){p.hidden=p.getAttribute('data-panel')!==id;});
+  });
+});
+</script>
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="https://js.hs-scripts.com/3109662.js"></script>
+<!-- End of HubSpot Embed Code -->
+</body>
+</html>
+
+
 
